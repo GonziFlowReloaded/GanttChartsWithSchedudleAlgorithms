@@ -162,7 +162,7 @@ class Procesos(QMainWindow):
 
         
 
-        self.dfAux = pd.DataFrame(sexoooo2(colaDeEjecucion), columns=['Proceso', 'Llegada', 'Termina'])
+        self.dfAux = pd.DataFrame(ordenarSRT(colaDeEjecucion), columns=['Proceso', 'Llegada', 'Termina'])
     
     def guardarDatos(self):
         try:
@@ -400,7 +400,6 @@ class GraficWindow(QMainWindow):
         while m < len(self.arregloOriginal):
                 if listaAuxiliar[k][0] == self.arregloOriginal[m][0]:
                     ultimosProcesos.append(listaAuxiliar[k])
-                    print('agrego caca')
                     m += 1
                     k = 0
                 else:
@@ -423,7 +422,7 @@ class GraficWindow(QMainWindow):
             
 
             
-def sexoooo2(colaDeEjecucion):
+def ordenarSRT(colaDeEjecucion):
         primero = consigoPrimeroPosta(colaDeEjecucion) #El menor tiempo de llegada con el menor tiempo de ejecucion
         tiempoTotal = obtenerTiempoDeEjecucion(colaDeEjecucion)
         colaDeEjecucionAux = []
