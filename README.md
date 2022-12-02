@@ -12,7 +12,7 @@ La aplicación consiste en graficar mediante un diagrama de gantt el como se rep
 En esta primera interfaz en la sección del menú desplegable podemos elegir si guardar o abrir los datos cargados en la tabla mediante un archivo csv
 La tercera opción "acerca de..." muestra mi nombre
 
-#Demostración
+# Demostración
 
 ![image](https://user-images.githubusercontent.com/94322853/205220006-9cbdeeab-6d43-4166-a07f-9f305fbc8b88.png)
 
